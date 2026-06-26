@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 export default function Home() {
-  // 🔄 DOKA MATRIX STATE MANAGEMENT (Scraped Blocks Allocation)
+  // 🔄 DOKA MATRIX STATE MANAGEMENT
   const [activeSegment, setActiveSegment] = useState('components');
 
   // Calculator Engine States
@@ -11,47 +11,8 @@ export default function Home() {
   const [estimate, setEstimate] = useState(null);
   const [formData, setFormData] = useState({ name: '', phone: '', msg: '' });
 
-  const MY_WHATSAPP_NUMBER = "91XXXXXXXXXX"; // Apna number yahan bina space ke daalein
-
-  // Dynamic Content Matrix with Real Professional Structural Site Images
-  const segmentData = {
-    components: {
-      title: "Props, beams, sheets and formwork components",
-      desc: "One of the fundamental things our formwork systems are based on is their site-proven components.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop", // Real construction engineering elements
-      items: ["Adjustable Heavy MS Props", "H-Beam Timber Girders", "Load-bearing Screw Jacks"]
-    },
-    wall: {
-      title: "Wall formwork",
-      desc: "Maurya offers a wide range of proven wall formwork systems for all jobsite situations, all fields of use, and all specifications regarding the concrete finish.",
-      image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=800&auto=format&fit=crop", // Heavy concrete framing wall structure
-      items: ["Framed Plywood Panels", "Heavy-duty Tie Rod Matrix", "Column Casting Shuttering"]
-    },
-    floor: {
-      title: "Floor formwork",
-      desc: "Maurya floor forms score for their diversity and their adaptability to widely differing construction tasks.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop", // Slab decking grid view
-      items: ["MS Centering Sheets (3x3)", "Flexible Decking Frames", "Slab Edge Formwork"]
-    },
-    safety: {
-      title: "Safety systems",
-      desc: "Safety on the site is a very great responsibility for all those involved.",
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop", // Engineered site infrastructure protection
-      items: ["Perimeter Side Mesh Guards", "Anti-Slip Working Platforms", "Handrails & Edge Safety"]
-    },
-    load: {
-      title: "Load-bearing systems",
-      desc: "Maurya load-bearing systems are designed for flexibility, outstanding cost-efficiency and optimum workplace safety.",
-      image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=800&auto=format&fit=crop", // Scaffolding structural nodes view
-      items: ["Cuplock Vertical Standards", "Horizontal Ledgers Matrix", "Heavy Load Access Towers"]
-    },
-    climbing: {
-      title: "Climbing formwork",
-      desc: "Maurya’s modular system means that it can deliver the right climbing technology solution across the entire architectural spectrum.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop", // Mega structural multi-tier high rise build
-      items: ["Guided Climbing Panels", "Hydraulic Bracket Adapters", "Multi-Tier Protection Screens"]
-    }
-  };
+  // 📞 VERIFIED CORPORATE COMMUNICATION PIPELINE (Bina kisi space ke)
+  const MY_PHONE_NUMBER = "918447140868"; 
 
   const calculateEstimate = (e) => {
     e.preventDefault();
@@ -67,8 +28,8 @@ export default function Home() {
 
   const handleContactSubmit = (e) => {
     e.preventDefault();
-    const whatsappText = `Hello Maurya Shuttering,\nMy Name is ${formData.name}.\nPhone: ${formData.phone}.\nRequirement: ${formData.msg}`;
-    window.open(`https://wa.me/${MY_WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappText)}`, '_blank');
+    const whatsappText = `Hello S D Scaffolding,\nMy Name is ${formData.name}.\nPhone: ${formData.phone}.\nRequirement: ${formData.msg}`;
+    window.open(`https://wa.me/${MY_PHONE_NUMBER}?text=${encodeURIComponent(whatsappText)}`, '_blank');
   };
 
   return (
@@ -78,29 +39,29 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-[#FFF200] shadow-sm px-6 py-5 border-b border-amber-400">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="bg-slate-950 text-[#FFF200] p-1.5 font-black text-xl tracking-tighter leading-none rounded">M</div>
+            <div className="bg-slate-950 text-[#FFF200] p-1.5 font-black text-xl tracking-tighter leading-none rounded">SD</div>
             <span className="font-black text-xl tracking-tight text-slate-950 uppercase">
-              maurya<span className="font-light text-slate-800 lowercase">shuttering</span>
+              S D <span className="font-light text-slate-800 lowercase">Scaffolding</span>
             </span>
           </div>
           <nav className="hidden md:flex gap-8 text-sm font-bold text-slate-950 tracking-tight">
-            <a href="#about" className="hover:underline">About</a>
+            <a href="#about" className="hover:underline">Corporate Summary</a>
             <a href="#systems" className="hover:underline">Systems Architecture</a>
             <a href="#calculator" className="hover:underline">Estimator Engine</a>
-            <a href="#contact" className="hover:underline">Contact</a>
+            <a href="#contact" className="hover:underline">Procurement Desk</a>
           </nav>
         </div>
       </header>
 
-      {/* 🟦 RIGHT-SIDE FLOATING STICKY ACTION UTILITIES */}
+      {/* 🟦 RIGHT-SIDE FLOATING STICKY ACTION UTILITIES (Calling & WhatsApp Integrated) */}
       <div className="fixed right-0 top-1/3 z-40 flex flex-col gap-0.5 shadow-xl">
-        <a href="#contact" className="bg-[#005596] hover:bg-[#004475] text-white p-3.5 flex flex-col items-center justify-center gap-1 min-w-[85px] transition-all">
-          <span className="text-lg">✉</span>
-          <span className="text-[10px] font-black uppercase tracking-wider">Contact</span>
+        <a href={`tel:${MY_PHONE_NUMBER}`} className="bg-[#005596] hover:bg-[#004475] text-white p-3.5 flex flex-col items-center justify-center gap-1 min-w-[85px] transition-all">
+          <span className="text-lg">📞</span>
+          <span className="text-[10px] font-black uppercase tracking-wider">Call Now</span>
         </a>
-        <a href="#calculator" className="bg-[#004475] hover:bg-[#005596] text-white p-3.5 flex flex-col items-center justify-center gap-1 min-w-[85px] transition-all">
-          <span className="text-lg">🖩</span>
-          <span className="text-[10px] font-black uppercase tracking-wider">Estimator</span>
+        <a href="#contact" className="bg-[#004475] hover:bg-[#005596] text-white p-3.5 flex flex-col items-center justify-center gap-1 min-w-[85px] transition-all">
+          <span className="text-lg">✉</span>
+          <span className="text-[10px] font-black uppercase tracking-wider">Message</span>
         </a>
       </div>
 
@@ -109,11 +70,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-5">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white">
-              Maurya Formwork & Scaffolding. <br />
+              S D Scaffolding & Formwork. <br />
               <span className="text-[#FFF200]">We make it work.</span>
             </h1>
             <p className="text-lg font-medium text-slate-300 pt-2">
-              Innovative formwork, structural solutions and heavy engineering staging services across all areas of construction.
+              Innovative formwork, structural staging matrix solutions and heavy engineering services across all tiers of infrastructure development.
             </p>
           </div>
         </div>
@@ -122,10 +83,13 @@ export default function Home() {
       {/* ℹ️ INTRO SPEECH COMPONENT */}
       <section id="about" className="py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-8 space-y-4">
-          <h2 className="text-2xl font-black text-slate-950">Doka-Inspired Modern Infrastructure Deployment Network</h2>
+          <h2 className="text-2xl font-black text-slate-950">Industrial-Tier Modern Infrastructure Deployment Network</h2>
           <p className="text-sm text-slate-600 leading-relaxed font-medium">
-            Maurya Shuttering operates a high-performing material logistics distribution network across the region. We ensure that precision engineered scaffolding assets, heavy MS components, and safe wall panel assemblies are provided swiftly—no matter how massive or structurally complex the blueprint configuration.
+            S D Scaffolding operates a high-performing material logistics distribution asset network across the region. We ensure that precision engineered scaffolding assets, heavy MS components, and safe wall panel assemblies are provided swiftly—no matter how massive or structurally complex the blueprint configuration.
           </p>
+          <div className="text-xs text-slate-500 font-bold tracking-wider uppercase bg-slate-100 p-3 rounded border border-slate-200 inline-block">
+            🧾 GSTIN / UIN : 09AVMPD9471F1Z8
+          </div>
         </div>
         <div className="md:col-span-4 flex flex-col gap-2">
           <div className="p-4 bg-slate-50 border border-slate-200 rounded text-center">
@@ -135,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🎛️ DYNAMIC OPTIONS EXPLORER SECTION (OPTIONS AND PICTURE CHANGES HERE) */}
+      {/* 🎛️ DYNAMIC OPTIONS EXPLORER SECTION */}
       <section id="systems" className="py-24 px-6 bg-slate-100 border-t border-b border-slate-200">
         <div className="max-w-7xl mx-auto">
           <div className="border-b border-slate-200 pb-6 mb-12 text-center lg:text-left">
@@ -146,7 +110,6 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            {/* Left Interactive Options Menu Column */}
             <div className="lg:col-span-5 flex flex-col gap-2">
               {Object.keys(segmentData).map((key) => (
                 <button
@@ -160,27 +123,17 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Right Picture Display and Specs Grid Panel Column */}
             <div className="lg:col-span-7 bg-white border border-slate-200 rounded p-6 lg:p-10 flex flex-col justify-between shadow-sm">
-              
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-                {/* Dynamic Responsive Picture Frame */}
                 <div className="md:col-span-5 relative w-full h-48 md:h-64 bg-slate-100 rounded overflow-hidden border border-slate-200 shadow-inner">
-                  <img 
-                    src={segmentData[activeSegment].image} 
-                    alt={segmentData[activeSegment].title}
-                    className="w-full h-full object-cover transition-all duration-300"
-                  />
+                  <img src={segmentData[activeSegment].image} alt={segmentData[activeSegment].title} className="w-full h-full object-cover" />
                 </div>
-
-                {/* Specs Technical Text Block */}
                 <div className="md:col-span-7 space-y-4">
                   <h3 className="text-xl font-black text-slate-950 tracking-tight leading-snug">{segmentData[activeSegment].title}</h3>
                   <p className="text-xs text-slate-500 leading-relaxed font-medium">{segmentData[activeSegment].desc}</p>
                 </div>
               </div>
 
-              {/* Internal Specific Core Component Tags Matrix */}
               <div className="pt-8 mt-8 border-t border-slate-100">
                 <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">SYSTEM SEGMENT COMPONENTS LIST:</div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -191,7 +144,6 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-
             </div>
 
           </div>
@@ -209,7 +161,7 @@ export default function Home() {
           <form onSubmit={calculateEstimate} className="space-y-5">
             <div>
               <label className="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-2">Total Slab Area (Sq. Ft.)</label>
-              <input type="number" required placeholder="e.g. 3000" value={area} onChange={(e) => setArea(e.target.value)} className="w-full px-4 py-3 bg-white border border-slate-200 focus:border-[#005596] focus:outline-none text-slate-950 font-semibold text-sm rounded shadow-inner" />
+              <input type="number" required placeholder="e.g. 3000" value={area} onChange={(e) => setArea(e.target.value)} className="w-full px-4 py-3 bg-white border border-slate-200 focus:border-[#005596] focus:bg-white focus:outline-none text-slate-950 font-semibold text-sm rounded shadow-inner" />
             </div>
             <div>
               <label className="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-2">Contract Period Cycle</label>
@@ -236,15 +188,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📞 LEAD ALLOCATION TRANSMISSION AND REGIONAL YARD */}
+      {/* 📞 LEAD ALLOCATION TRANSMISSION AND REGIONAL OFFICES */}
       <section id="contact" className="py-24 px-6 bg-slate-50 border-t border-b border-slate-200">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-5">
+          <div className="space-y-6">
             <h2 className="text-3xl font-black text-slate-950 leading-tight tracking-tight">Deploy Global Formwork Standards <br />On Your Next Construction Site</h2>
-            <p className="text-sm text-slate-600 leading-relaxed">Reach our material management offices directly for procurement, site logistic charts, or custom blueprint validation metrics.</p>
-            <div className="space-y-3 text-xs font-bold text-slate-700 pt-2 tracking-wide uppercase">
-              <p>📍 Logistics Hub: Gothawa, Sirsa Chauraha, Handia, Prayagraj, UP</p>
-              <p>👨‍💼 Lead Technical Consultant: Ankit Maurya</p>
+            <p className="text-sm text-slate-600 leading-relaxed">Reach our material management offices directly for procurement, site logistic charts, or or direct corporate communications.</p>
+            
+            <div className="space-y-4 pt-2">
+              <div className="border-l-4 border-[#005596] pl-4">
+                <h4 className="text-xs font-black text-slate-950 uppercase tracking-wider">Corporate Office (Billed To):</h4>
+                <p className="text-xs text-slate-600 font-semibold mt-1">📍 F 171 DELTA 1, GREATER NOIDA, Gautambuddha Nagar, Uttar Pradesh 201308</p>
+              </div>
+              
+              <div className="border-l-4 border-amber-400 pl-4">
+                <h4 className="text-xs font-black text-slate-950 uppercase tracking-wider">Regional Logistics Yard:</h4>
+                <p className="text-xs text-slate-600 font-semibold mt-1">📍 Gothawa, Sirsa Chauraha, Handia, Prayagraj, Uttar Pradesh</p>
+              </div>
             </div>
           </div>
 
@@ -262,18 +222,3 @@ export default function Home() {
               <div>
                 <label className="block text-[10px] font-black text-slate-600 uppercase tracking-wider mb-2">Material Fleet & Load Specifications</label>
                 <textarea rows="3" required placeholder="Specify system metrics requirements or slab specifications..." value={formData.msg} onChange={(e) => setFormData({...formData, msg: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded focus:border-[#005596] focus:bg-white focus:outline-none text-slate-950 text-xs font-medium rounded resize-none"></textarea>
-              </div>
-              <button type="submit" className="w-full py-3.5 bg-[#FFF200] hover:bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-widest rounded border border-amber-400 transition-all shadow cursor-pointer">Transmit Request via WhatsApp</button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      {/* 📜 SYSTEM FOOTER */}
-      <footer className="py-12 text-center text-xs text-slate-400 font-bold tracking-wider uppercase bg-white border-t border-slate-100">
-        <p>© 2026 Maurya Shuttering Solutions. Modeled Under Global Formwork Controls.</p>
-      </footer>
-
-    </main>
-  );
-}
