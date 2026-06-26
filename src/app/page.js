@@ -11,8 +11,48 @@ export default function Home() {
   const [estimate, setEstimate] = useState(null);
   const [formData, setFormData] = useState({ name: '', phone: '', msg: '' });
 
-  // 📞 VERIFIED CORPORATE COMMUNICATION PIPELINE (Bina kisi space ke)
+  // 📞 VERIFIED CORPORATE COMMUNICATION PIPELINE
   const MY_PHONE_NUMBER = "918447140868"; 
+
+  // Dynamic Content Matrix with Real Professional Structural Site Images
+  const segmentData = {
+    components: {
+      title: "Props, beams, sheets and formwork components",
+      desc: "One of the fundamental things our formwork systems are based on is their site-proven components.",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      items: ["Adjustable Heavy MS Props", "H-Beam Timber Girders", "Load-bearing Screw Jacks"]
+    },
+    wall: {
+      title: "Wall formwork",
+      desc: "S D Scaffolding offers a wide range of proven wall formwork systems for all jobsite situations, all fields of use, and all specifications regarding the concrete finish.",
+      image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=800&auto=format&fit=crop",
+      items: ["Framed Plywood Panels", "Heavy-duty Tie Rod Matrix", "Column Casting Shuttering"]
+    },
+    floor: {
+      title: "Floor formwork",
+      desc: "S D Scaffolding floor forms score for their diversity and their adaptability to widely differing construction tasks.",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      items: ["MS Centering Sheets (3x3)", "Flexible Decking Frames", "Slab Edge Formwork"]
+    },
+    safety: {
+      title: "Safety systems",
+      desc: "Safety on the site is a very great responsibility for all those involved.",
+      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
+      items: ["Perimeter Side Mesh Guards", "Anti-Slip Working Platforms", "Handrails & Edge Safety"]
+    },
+    load: {
+      title: "Load-bearing systems",
+      desc: "S D Scaffolding load-bearing systems are designed for flexibility, outstanding cost-efficiency and optimum workplace safety.",
+      image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=800&auto=format&fit=crop",
+      items: ["Cuplock Vertical Standards", "Horizontal Ledgers Matrix", "Heavy Load Access Towers"]
+    },
+    climbing: {
+      title: "Climbing formwork",
+      desc: "S D Scaffolding’s modular system means that it can deliver the right climbing technology solution across the entire architectural spectrum.",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+      items: ["Guided Climbing Panels", "Hydraulic Bracket Adapters", "Multi-Tier Protection Screens"]
+    }
+  };
 
   const calculateEstimate = (e) => {
     e.preventDefault();
@@ -53,7 +93,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 🟦 RIGHT-SIDE FLOATING STICKY ACTION UTILITIES (Calling & WhatsApp Integrated) */}
+      {/* 🟦 RIGHT-SIDE FLOATING STICKY ACTION UTILITIES */}
       <div className="fixed right-0 top-1/3 z-40 flex flex-col gap-0.5 shadow-xl">
         <a href={`tel:${MY_PHONE_NUMBER}`} className="bg-[#005596] hover:bg-[#004475] text-white p-3.5 flex flex-col items-center justify-center gap-1 min-w-[85px] transition-all">
           <span className="text-lg">📞</span>
@@ -65,7 +105,7 @@ export default function Home() {
         </a>
       </div>
 
-      {/* 🏗️ HERO SECTION WITH COMBINED STRENGTH HOUSING CONTEXT */}
+      {/* 🏗️ HERO SECTION */}
       <section className="relative bg-slate-900 text-white py-32 px-6 bg-cover bg-center border-b border-slate-800" style={{ backgroundImage: `linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.4)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop')` }}>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-5">
@@ -109,7 +149,6 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
             <div className="lg:col-span-5 flex flex-col gap-2">
               {Object.keys(segmentData).map((key) => (
                 <button
@@ -145,7 +184,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -161,7 +199,7 @@ export default function Home() {
           <form onSubmit={calculateEstimate} className="space-y-5">
             <div>
               <label className="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-2">Total Slab Area (Sq. Ft.)</label>
-              <input type="number" required placeholder="e.g. 3000" value={area} onChange={(e) => setArea(e.target.value)} className="w-full px-4 py-3 bg-white border border-slate-200 focus:border-[#005596] focus:bg-white focus:outline-none text-slate-950 font-semibold text-sm rounded shadow-inner" />
+              <input type="number" required placeholder="e.g. 3000" value={area} onChange={(e) => setArea(e.target.value)} className="w-full px-4 py-3 bg-white border border-slate-200 focus:border-[#005596] focus:outline-none text-slate-950 font-semibold text-sm rounded shadow-inner" />
             </div>
             <div>
               <label className="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-2">Contract Period Cycle</label>
@@ -193,7 +231,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl font-black text-slate-950 leading-tight tracking-tight">Deploy Global Formwork Standards <br />On Your Next Construction Site</h2>
-            <p className="text-sm text-slate-600 leading-relaxed">Reach our material management offices directly for procurement, site logistic charts, or or direct corporate communications.</p>
+            <p className="text-sm text-slate-600 leading-relaxed">Reach our material management offices directly for procurement, site logistic charts, or direct corporate communications.</p>
             
             <div className="space-y-4 pt-2">
               <div className="border-l-4 border-[#005596] pl-4">
@@ -237,6 +275,3 @@ export default function Home() {
     </main>
   );
 }
-
-// Dummy object to maintain compile structural metrics reference consistency
-const segmentData = {};
