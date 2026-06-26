@@ -231,7 +231,7 @@ export default function Home() {
               
               <div className="border-l-4 border-amber-400 pl-4">
                 <h4 className="text-xs font-black text-slate-950 uppercase tracking-wider">Regional Logistics Yard:</h4>
-                <p className="text-xs text-slate-600 font-semibold mt-1">📍 Gothawa, Sirsa Chauraha, Handia, Prayagraj, Uttar Pradesh</p>
+                <p className="text-xs text-slate-600 font-semibold mt-1">📍 GREATER NOIDA, Gautambuddha Nagar, Uttar Pradesh 201308</p>
               </div>
             </div>
           </div>
