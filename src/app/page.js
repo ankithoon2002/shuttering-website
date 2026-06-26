@@ -316,7 +316,7 @@ export default function Home() {
           </div>
           <div className="border-l-4 border-amber-400 pl-4">
             <h4 className="text-xs font-black text-slate-950 uppercase tracking-wider mb-1">Regional Yards Pipeline:</h4>
-            <p>📍 Gothawa, Sirsa Chauraha, Handia, Prayagraj, Uttar Pradesh</p>
+            <p>📍GREATER NOIDA, Gautambuddha Nagar, Uttar Pradesh 201308</p>
           </div>
         </div>
       </section>
