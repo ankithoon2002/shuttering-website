@@ -222,3 +222,21 @@ export default function Home() {
               <div>
                 <label className="block text-[10px] font-black text-slate-600 uppercase tracking-wider mb-2">Material Fleet & Load Specifications</label>
                 <textarea rows="3" required placeholder="Specify system metrics requirements or slab specifications..." value={formData.msg} onChange={(e) => setFormData({...formData, msg: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded focus:border-[#005596] focus:bg-white focus:outline-none text-slate-950 text-xs font-medium rounded resize-none"></textarea>
+              </div>
+              <button type="submit" className="w-full py-3.5 bg-[#FFF200] hover:bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-widest rounded border border-amber-400 transition-all shadow cursor-pointer">Transmit Request via WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* 📜 SYSTEM FOOTER */}
+      <footer className="py-12 text-center text-xs text-slate-400 font-bold tracking-wider uppercase bg-white border-t border-slate-100">
+        <p>© 2026 S D Scaffolding Solutions. Modeled Under Global Formwork Controls.</p>
+      </footer>
+
+    </main>
+  );
+}
+
+// Dummy object to maintain compile structural metrics reference consistency
+const segmentData = {};
