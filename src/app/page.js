@@ -49,6 +49,9 @@ export default function Home() {
     }
   };
 
+  // Safe runtime execution selector context
+  const currentData = segmentData[activeSegment] || segmentData.components;
+
   const calculateEstimate = (e) => {
     e.preventDefault();
     const totalArea = parseFloat(area);
@@ -154,22 +157,22 @@ export default function Home() {
             <div className="lg:col-span-7 bg-white border border-slate-200 rounded p-6 lg:p-10 flex flex-col justify-between shadow-sm">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                 <div className="md:col-span-5 relative w-full h-48 md:h-64 bg-slate-100 rounded overflow-hidden border border-slate-200 shadow-inner">
-                  <img src={segmentData[activeSegment].image} alt={segmentData[activeSegment].title} className="w-full h-full object-cover" />
+                  <img src={currentData?.image || ''} alt={currentData?.title || ''} className="w-full h-full object-cover" />
                 </div>
                 <div className="md:col-span-7 space-y-4">
-                  <h3 className="text-xl font-black text-slate-950 tracking-tight leading-snug">{segmentData[activeSegment].title}</h3>
-                  <p className="text-xs text-slate-500 leading-relaxed font-medium">{segmentData[activeSegment].desc}</p>
+                  <h3 className="text-xl font-black text-slate-950 tracking-tight leading-snug">{currentData?.title || ''}</h3>
+                  <p className="text-xs text-slate-500 leading-relaxed font-medium">{currentData?.desc || ''}</p>
                 </div>
               </div>
 
               <div className="pt-8 mt-8 border-t border-slate-100">
                 <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">SYSTEM SEGMENT COMPONENTS LIST:</div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  {segmentData[activeSegment].items.map((item, idx) => (
+                  {currentData?.items?.map((item, idx) => (
                     <div key={idx} className="bg-slate-50 border border-slate-200 p-3 rounded text-center text-xs font-bold text-slate-800 shadow-inner">
                       {item}
                     </div>
-                  ))}
+                  )) || null}
                 </div>
               </div>
             </div>
