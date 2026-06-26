@@ -2,19 +2,14 @@
 import React, { useState } from 'react';
 
 export default function Home() {
-  // 🔄 DOKA MATRIX STATE MANAGEMENT
   const [activeSegment, setActiveSegment] = useState('components');
-
-  // Calculator Engine States
   const [area, setArea] = useState('');
   const [days, setDays] = useState('30');
   const [estimate, setEstimate] = useState(null);
   const [formData, setFormData] = useState({ name: '', phone: '', msg: '' });
 
-  // 📞 VERIFIED CORPORATE COMMUNICATION PIPELINE
   const MY_PHONE_NUMBER = "918447140868"; 
 
-  // Dynamic Content Matrix with Real Professional Structural Site Images
   const segmentData = {
     components: {
       title: "Props, beams, sheets and formwork components",
@@ -74,8 +69,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900 font-sans selection:bg-slate-950 selection:text-white overflow-x-hidden scroll-smooth">
-      
-      {/* 🟨 DOKA ICONIC BRAND YELLOW HEADER */}
       <header className="sticky top-0 z-50 bg-[#FFF200] shadow-sm px-6 py-5 border-b border-amber-400">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
@@ -93,7 +86,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 🟦 RIGHT-SIDE FLOATING STICKY ACTION UTILITIES */}
       <div className="fixed right-0 top-1/3 z-40 flex flex-col gap-0.5 shadow-xl">
         <a href={`tel:${MY_PHONE_NUMBER}`} className="bg-[#005596] hover:bg-[#004475] text-white p-3.5 flex flex-col items-center justify-center gap-1 min-w-[85px] transition-all">
           <span className="text-lg">📞</span>
@@ -105,7 +97,6 @@ export default function Home() {
         </a>
       </div>
 
-      {/* 🏗️ HERO SECTION */}
       <section className="relative bg-slate-900 text-white py-32 px-6 bg-cover bg-center border-b border-slate-800" style={{ backgroundImage: `linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.4)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop')` }}>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-5">
@@ -120,7 +111,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ℹ️ INTRO SPEECH COMPONENT */}
       <section id="about" className="py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-8 space-y-4">
           <h2 className="text-2xl font-black text-slate-950">Industrial-Tier Modern Infrastructure Deployment Network</h2>
@@ -139,7 +129,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🎛️ DYNAMIC OPTIONS EXPLORER SECTION */}
       <section id="systems" className="py-24 px-6 bg-slate-100 border-t border-b border-slate-200">
         <div className="max-w-7xl mx-auto">
           <div className="border-b border-slate-200 pb-6 mb-12 text-center lg:text-left">
@@ -188,7 +177,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📊 INTERACTIVE SIMULATOR COMPUTATION CORE */}
       <section id="calculator" className="py-24 px-6 max-w-5xl mx-auto">
         <div className="text-center space-y-2 mb-16">
           <h2 className="text-3xl font-black text-slate-950 tracking-tight">Formwork Calculation Optimization Engine</h2>
@@ -226,7 +214,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📞 LEAD ALLOCATION TRANSMISSION AND REGIONAL OFFICES */}
       <section id="contact" className="py-24 px-6 bg-slate-50 border-t border-b border-slate-200">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
@@ -267,11 +254,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📜 SYSTEM FOOTER */}
       <footer className="py-12 text-center text-xs text-slate-400 font-bold tracking-wider uppercase bg-white border-t border-slate-100">
         <p>© 2026 S D Scaffolding Solutions. Modeled Under Global Formwork Controls.</p>
       </footer>
-
     </main>
   );
 }
